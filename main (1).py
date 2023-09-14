@@ -1,7 +1,20 @@
-#Write a program that determines whether a year entered by the user is a leap year or not using ifelif-else statements
+#
+class Player:
+    def play(self):
+        print("The player is playing cricket")
 
-year = 2023
-if (year % 4 == 0):
-  print("Leap year")
-else:
-  print("Not leap year")
+class Batsman(Player):
+    def play(self):
+        print("The batsman is batting")
+
+class Bowler(Player):
+    def play(self):
+        print("The bowler is bowling")
+
+# Create objects of Batsman and Bowler classes
+batsman = Batsman()
+bowler = Bowler()
+
+# Call the play() method for each object
+batsman.play()
+bowler.play()
